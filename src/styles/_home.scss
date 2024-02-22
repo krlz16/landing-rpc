@@ -1,0 +1,57 @@
+@font-face {
+  font-family: $font-primary;
+  src: url('../assets/font/Rootstock-Sans-Body.woff') format('woff'),
+    url('../assets/font/Rootstock-Sans-Body.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: $font-head;
+  src: url('../assets/font/Rootstock-Sans-Headline.woff') format('woff'),
+    url('../assets/font/Rootstock-Sans-Headline.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: $font-detail;
+  src: url('../assets/font/Rootstock-Sans-Tags.woff') format('woff'),
+    url('../assets/font/Rootstock-Sans-Tags.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: $font-primary, serif;
+  background-color: #000;
+  color: white;
+}
+
+svg {
+  fill: white;
+}
+li {
+  list-style: none;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(54, 54, 54);   
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(125, 125, 125);
+  border-radius: 20px;
+  border: 1px solid rgb(49, 49, 49);
+}

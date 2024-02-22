@@ -1,0 +1,38 @@
+.navigation-container {
+  .menu-burger {
+    display: none;
+  }
+  .close-icon {
+    display: none;
+  }
+  padding: 24px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  .navigation {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    position: relative;
+    z-index: 0;
+    font-size: 17px;
+    a.link {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    .discord {
+      display: flex;
+      align-items: center;
+      a {
+        display: flex;
+        align-items: center;
+      }
+      svg {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+      }
+    }
+  }
+}

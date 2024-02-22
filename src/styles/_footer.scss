@@ -1,0 +1,147 @@
+footer {
+  max-width: 1330px;
+  width: 100%;
+  padding: 24px;
+  margin: 150px auto 20px auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  .title {
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+    span {
+      width: max-content;
+      padding: 4px;
+    }
+  }
+  .footer-menu {
+    display: flex;
+    .item {
+      flex: 1;
+      .title {
+        font-weight: bold;
+        font-size: 28px;
+        margin-bottom: 16px;
+      }
+    }
+  }
+  .navigation {
+    li {
+      margin-bottom: 16px;
+      a {
+        font-size: 14px;
+        transition: color .3s ease-in-out;
+        display: flex;
+        align-items: center;
+        &:hover {
+          color: $orange;
+        }
+        svg {
+          width: 15px;
+          height: 15px;
+          margin-right: 5px;
+          transition: fill ease 0.5s;
+        }
+        &:hover {
+          color: $orange;
+          svg {
+            fill: $orange;
+          }
+        }
+      }
+    }
+  }
+  .social {
+    display: flex;
+    align-items: flex-end;
+    gap: 30px;
+    padding-bottom: 20px;
+    svg {
+      width: 32px;
+      height: 32px;
+      transition: fill ease 0.5s;
+      &:hover {
+        fill: $orange;
+      }
+    }
+  }
+  .documentation {
+    margin-top: 20px;
+    .sites {
+      display: flex;
+      gap: 30px;
+      a {
+        font-weight: bold;
+        font-size: 21px;
+        margin-bottom: 16px;
+        transition: color ease 0.5s;
+        svg {
+          width: 15px;
+          height: 15px;
+          margin-right: 5px;
+          transition: fill ease 0.5s;
+        }
+        &:hover {
+          color: $orange;
+          svg {
+            fill: $orange;
+          }
+        }
+      }
+    }
+  }
+  .whitepaper {
+    margin-top: 20px;
+    .title {
+      color: hsla(48, 33%, 97%, 0.5);
+      font-size: 10px;
+      letter-spacing: .1rem;
+    }
+    .btn-container {
+      margin-top: 20px;
+      display: flex;
+      gap: 20px;
+
+      .btn-primary {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        svg {
+          transition: fill ease 0.5s;
+          width: 15px;
+          height: 20px;
+        }
+        &:hover {
+          svg {
+            fill: #000;
+          }
+        }
+      }
+
+    }
+  }
+
+  .copyright {
+    margin-top: 50px;
+    display: flex;
+    grid-column: 1 / 3;
+    font-size: 12px;
+    .reserved {
+      flex: 1;
+      color: $white2;
+    }
+    .terms-condition {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      .navigation {
+        display: flex;
+        gap: 20px;
+        li {
+          margin-bottom: unset;
+        }
+      }
+    }
+  }
+}

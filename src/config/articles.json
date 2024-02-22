@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Easy Set-Up",
+    "description": "Get an API key & make your first API call in minutes",
+    "bg_color": "bg-green"
+  },
+  {
+    "title": "Analytics",
+    "description": "Get insights on the usage of your API keys",
+    "bg_color": "bg-pink"
+  },
+  {
+    "title": "Better Response Time",
+    "description": "Get faster response time",
+    "bg_color": "bg-orange"
+  },
+  {
+    "title": "RIF Flyover",
+    "description": "Transfer Bitcoin in a fast, decentralized, and censorship resistant way. Earn revenue by becoming a liquidity provider.",
+    "bg_color": "bg-green"
+  },
+  {
+    "title": "RIF Relay",
+    "description": "Allow your users to pay for transaction fees in any ERC20 token instead of RBTC. Earn a margin on top of the transaction fees collected.",
+    "bg_color": "bg-pink"
+  },
+  {
+    "title": "RIF Name Service",
+    "description": "Multi-chain human readable blockchain domains for the Rootstock ecosystem. Earn additional revenue by becoming an RNS reseller.",
+    "bg_color": "bg-orange"
+  }
+]

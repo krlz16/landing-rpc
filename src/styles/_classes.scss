@@ -1,0 +1,342 @@
+@import 'buttons';
+
+a {
+  color: white;
+  text-decoration: none;
+}
+p {
+  line-height: 24px;
+}
+.title-head {
+  font-size: 56px;
+  font-weight: bold;
+}
+.bg-orange {
+  background-color: $orange;
+}
+.text-orange {
+  color: $orange;
+}
+.bg-pink {
+  background-color: $pink;
+}
+.bg-green {
+  background-color: $green;
+}
+.text-green {
+  color: $green;
+}
+.bg-white {
+  background-color: white;
+}
+.bg-lime {
+  background-color: $lime;
+}
+.bg-purple {
+  background-color: $purple;
+}
+.bg-cyan {
+  background-color: $cyan;
+}
+.text-white {
+  color: white;
+}
+.text-black {
+  color: #000;
+}
+.pl-30 {
+  padding-left: 30px;
+}
+h1, h2, h3 {
+  font-weight: 700;
+  width: max-content;
+  font-family: $font-head;
+  // line-height: 53px;
+  span {
+    padding: 0 5px;
+  }
+}
+
+h1 {
+  font-size: 78px;
+}
+h2 {
+  font-size: 56px;
+  line-height: 53px;
+  font-family: $font-head;
+}
+h3 {
+  font-size: 30px;
+  padding: 0 4px;
+}
+.badge {
+  text-align: center;
+  border-radius: 90px;
+  font-size: 12px;
+  height: max-content;
+  min-width: 20px;
+  padding: 2px 5px;
+  letter-spacing: 5%;
+  font-weight: 500;
+  font-family: $font-detail;
+}
+.main-container {
+  max-width: 1330px;
+  width: 100%;
+  padding: 24px;
+  margin: 0 auto;
+  .section-head {
+    margin-bottom: 112px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+    .container-title {
+      grid-column: 1 / 3;
+      width: 88%;
+      display: flex;
+      .title {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        word-break: break-all;
+      }
+    }
+    .call-action {
+      display: flex;
+      padding-left: 30px;
+      margin-top: 127px;
+      .btn-outline-secondary {
+        @include buttonSize(200px, 37px);
+        font-size: 24px;
+        font-weight: 400;
+      }
+    }
+    .content-info {
+      position: relative;
+      left: -70px;
+      top: -50px;
+      font-family: $font-detail;
+      .info {
+        font-size: 24px;
+        font-weight: 500;
+        width: 435px;
+        margin-top: 20px;
+        margin-bottom: 28px;
+        line-height: 24px;
+      }
+    }
+    .content-img {
+      position: absolute;
+      top: 89px;
+      right: 115px;
+    }
+  }
+
+  .content-article {
+    padding-left: 30px;
+    font-family: $font-detail;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    .article-item {
+      flex: 1;
+      max-width: 445px;
+      width: 100%;
+      border-radius: 20px;
+      border: 1px solid white;
+      min-width: 309px;
+      padding: 20px;
+      .item-head {
+        display: flex;
+        gap: 10px;
+        .title {
+          padding: 4px;
+        }
+      }
+      .info {
+        margin-top: 20px;
+        font-size: 18px;
+        font-weight: 500;
+        width: 312px;
+      }
+    }
+    &.section2 {
+      .article-item {
+        .info {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .section-work {
+    padding-left: 30px;
+    margin: 63px 0 50px 0;
+    &>.badge {
+      font-size: 19px;
+      width: 36px;
+      display: block;
+      margin-bottom: 19px;
+    }
+    .container {
+      display: flex;
+      justify-content: space-evenly;
+      gap: 60px;
+    }
+    .content-img {
+      img {
+        height: 480px;
+      }
+    }
+    .content-step {
+      display: flex;
+      gap: 46px;
+      .steps {
+        .step {
+          margin-bottom: 35px;
+          .title {
+            display: flex;
+            gap: 8px;
+          }
+          .info {
+            font-size: 18px;
+            font-weight: 500;
+            margin-top: 14px;
+          }
+          .btn-outline-primary {
+            margin-top: 46px;
+            font-size: 24px;
+            @include buttonSize(157px, 44px);
+          }
+        }
+      }
+    }
+  }
+
+  .section-code {
+    padding-left: 30px;
+    margin-bottom: 166px;
+    display: flex;
+    justify-content: space-between;
+    .container-code {
+      width: 619px;
+      height: 300px;
+      background-color: #fdf6e3;
+      border-radius: 5px;
+      padding: 24px;
+      code {
+        color: #657b83;
+        font-size: 14px;
+        line-height: 22px;
+        .address {
+          color: #b58900;
+        }
+        .cl1 {
+          color: #cb4b16;
+        }
+        .cl2 {
+          color: #268bd2;
+        }
+      }
+    }
+    .description {
+      &>.badge {
+        font-size: 19px;
+      }
+      .title {
+        margin-top: 10px;
+        width: 100%;
+        word-break: break-all;
+      }
+      .info {
+        margin-top: 23px;
+        width: 400px;
+        font-size: 24px;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .section-community {
+    padding-left: 30px;
+    .community, .resources {
+      display: flex;
+      justify-content: flex-start;
+      position: relative;
+    }
+    .community {
+      .btn-outline-primary {
+        margin-top: 42px;
+        font-size: 24px;
+        @include buttonSize(239px, 44px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        svg {
+          width: 25px;
+          fill: white;
+        }
+        &:hover {
+          svg {
+            fill: #000 !important;
+          }
+        }
+      }
+    }
+    .resources {
+      margin-top: 30px;
+      .btn-outline-primary {
+        margin-top: 42px;
+        font-size: 24px;
+        @include buttonSize(196px, 44px);
+      }
+      .content-info {
+        display: flex;
+        align-items: center;
+        .description {
+          font-size: 18px;
+          font-weight: 500;
+        }
+      }
+    }
+    svg {
+      fill: transparent;
+    }
+    .content-title {
+      .badge {
+        font-size: 19px;
+        font-weight: 500;
+        padding: 2px 7px;
+      }
+      .title {
+        width: 600px;
+        margin-top: 23px;
+      }
+    }
+    .content-icon {
+      width: 324px;
+      height: 324px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: top;
+      svg {
+        position: absolute;
+        z-index: -1;
+        right: 50%;
+        left: 55%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+    .content-info {
+      max-width: 233px;
+      .description {
+        font-size: 24px;
+        font-weight: 500;
+        margin-top: 26px;
+        margin-bottom: 46px;
+      }
+    }
+  }
+}

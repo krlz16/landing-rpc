@@ -1,0 +1,77 @@
+
+button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+%btn-base {
+  position: relative;
+  border-radius: 90px;
+  &::before {
+    content: '';
+    position: absolute;
+    border-radius: 90px;
+    top: 2px;
+    left: 2px;
+    z-index: -1;
+  }
+}
+
+@mixin buttonColor($bgColor, $textColor: #fff, $borderColor: null, $bgBefore: #000, $includeBefore: true) {
+  @extend %btn-base;
+  background-color: $bgColor;
+  color: $textColor;
+  border: 1px solid $borderColor;
+  transition: background-color 0.5s ease, color 0.5s ease;
+  &:hover {
+    background-color: $borderColor;
+    color: $bgColor;
+    border-color: $bgColor;
+  }
+  @if $includeBefore {
+    &::before {
+      border: 1px solid $borderColor;
+      background-color: $bgBefore;
+    }
+  }
+}
+
+@mixin buttonSize($width, $height) {
+  width: $width;
+  height: $height;
+  &::before {
+    width: $width;
+    height: $height;
+  }
+}
+
+.btn-outline-primary {
+  @extend %btn-base;
+  @include buttonSize(64px, 29px);
+  @include buttonColor(#000, white, white, true);
+}
+
+.btn-outline-secondary {
+  @extend %btn-base;
+  @include buttonSize(77px, 29px);
+  @include buttonColor(white, #000, #000, white);
+}
+
+.btn-primary {
+  @extend %btn-base;
+  @include buttonSize(max-content, max-content);
+  @include buttonColor(#000, _, white, _, false);
+  padding: 8px 12px;
+}
+
+
+a {
+  &.btn-outline-primary, &.btn-outline-secondary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+}
