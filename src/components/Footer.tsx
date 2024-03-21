@@ -1,8 +1,10 @@
+import { ROUTER } from "@/config/constants"
 import DiscordIcon from "@/utils/icons/DiscordIcon"
 import DonwloadIcon from "@/utils/icons/DownloadIcon"
 import ExternalLinkIcon from "@/utils/icons/ExternalLinkIcon"
 import TelegramIcon from "@/utils/icons/TelegramIcon"
 import XIcon from "@/utils/icons/XIcon"
+import { Link } from "react-router-dom"
 
 function Footer() {
   return (
@@ -100,13 +102,17 @@ function Footer() {
       </div>
       <div className="copyright">
         <div className="reserved">
-          <p>&copy; 2024. IOVLabs. All rights reserved</p>
+          <p>&copy; { new Date().getFullYear() }. IOVLabs. All rights reserved</p>
           <p>Rootstock Public Key (2ED3 E888 0384 D3D9 70B6 A612 BEBC A6A9 63F6 1479)</p>
         </div>
         <div className="terms-condition">
           <ul className="navigation">
-            <li><a href="https://rootstock.io/privacy-policy/" target="_blank">Privacy Policy</a></li>
-            <li><a href="https://rootstock.io/terms-conditions/" target="_blank">Terms and Conditions</a></li>
+            <li>
+              <Link to={ROUTER.PRIVACY_POLICY}>Privacy Policy</Link>
+            </li>
+            <li>
+              <Link to={ROUTER.TERMS_CONDITIONS}>Terms and Conditions</Link>
+            </li>
           </ul>
         </div>
       </div>

@@ -1,4 +1,5 @@
 import IMG from '@/assets/svg/imgWork.svg';
+import { RPC_API_URL } from '@/config/constants';
 import VerticalLineIcon from '@/utils/icons/VerticalLineIcon';
 
 function SectionHowItWork() {
@@ -32,7 +33,7 @@ function SectionHowItWork() {
                 <h3 className="bg-white text-black">Start building</h3>
                 <span className="badge bg-white text-black">3.0</span>
               </div>
-              <a href="" className='btn-outline-primary'>Sign up now</a>
+              <a href={`${RPC_API_URL}/register`} target='_blank' className='btn-outline-primary'>Sign up now</a>
             </div>
           </div>
         </div>

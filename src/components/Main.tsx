@@ -6,14 +6,14 @@ import SectionHowItWork from "./main/SectionHowItWork";
 
 function Main() {
   return (
-    <main className="main-container">
+    <>
       <SectionHero />
       <SectionArticles section="section1" />
       <SectionHowItWork />
       <SectionCode />
       <SectionCommunity />
       <SectionArticles section="section2" />
-    </main>
+    </>
   )
 }
 

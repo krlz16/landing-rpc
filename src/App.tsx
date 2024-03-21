@@ -1,13 +1,21 @@
+import { Outlet, useLocation } from 'react-router-dom'
 import Footer from './components/Footer'
-import Main from './components/Main'
 import Header from './components/navigation/Header'
+import { useEffect } from 'react';
 
 function App() {
-  
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+
   return (
     <>
       <Header />
-      <Main />
+      <main className="main-container">
+        <Outlet />
+      </main>
       <Footer />
     </>
   )

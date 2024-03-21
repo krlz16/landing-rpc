@@ -16,19 +16,19 @@ function SectionCommunity() {
         <div className="content-info">
           <img src={CirclesIcon} alt="" />
           <p className="description">238 000 Developers on our Channel</p>
-          <button className="btn-outline-primary">
+          <a href='https://discord.com/invite/rootstock' target='_blank' className="btn-outline-primary">
             Join our Discord
             <DiscordIcon />
-          </button>
+          </a>
         </div>
       </div>
       <div className="resources">
         <div className="content-title">
           <span className="badge bg-purple text-black">Resources</span>
           <h2 className="title">Other useful products to build with</h2>
-          <button className="btn-outline-primary">
+          <a href='https://dev.rootstock.io/' target='_blank' className="btn-outline-primary">
             Visit Dev Portal
-          </button>
+          </a>
         </div>
         <div className="content-icon">
         </div>

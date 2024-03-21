@@ -1,12 +1,13 @@
 import IMG from '@/assets/svg/icon1.svg'
 import Title from '../controls/Title'
+import { RPC_API_URL } from '@/config/constants'
 
 export default function SectionHero() {
   return (
     <section className="section-head">
       <Title />
       <div className="call-action">
-        <a className="btn-outline-secondary">Sign Up for Free</a>
+        <a href={`${RPC_API_URL}/register`} target='_blank' className="btn-outline-secondary">Sign Up for Free</a>
       </div>
       <div className="content-info">
         <span className="badge bg-green text-black">1.0</span>
